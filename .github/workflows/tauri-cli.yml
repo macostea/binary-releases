@@ -56,7 +56,7 @@ jobs:
         with:
           repository: 'tauri-apps/tauri'
       - name: Build
-        run: docker buildx --platform linux/arm64 -t tauri-app --output out .
+        run: docker buildx build --platform linux/arm64 -t tauri-app --output out .
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
         with:
