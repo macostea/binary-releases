@@ -54,7 +54,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          repository: 'tauri-apps/tauri'
+          repository: 'macostea/tauri'
       - name: Checkout current repo
         uses: actions/checkout@v2
         with:
