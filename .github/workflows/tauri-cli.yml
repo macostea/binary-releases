@@ -67,7 +67,7 @@ jobs:
       - name: Install cross
         run: cargo install cross
       - name: Build
-        run: cd tooling/cli.rs && cross build --target ${{ matrix.arch }} --release && tree .
+        run: cd tooling/cli.rs && cross build --target ${{ matrix.arch }} --release
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
         with:
