@@ -1,4 +1,4 @@
-FROM --platform=$TARGETPLATFORM rust:1.56 as build-stage
+FROM rust:1.56 as build-stage
 
 WORKDIR /app
 COPY . .
